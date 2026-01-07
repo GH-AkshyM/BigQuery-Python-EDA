@@ -6,7 +6,7 @@ This project performs an exploratory and behavioral analysis of the **GA4 public
 
 The goal is not to replicate standard dashboard metrics, but to understand **how users move through the purchase journey**, where friction occurs, and which dimensions (traffic source, product type, brand, audience, geography) drive real purchase intent rather than surface-level activity.
 
-- The analysis focuses on identifying:
+The analysis focuses on identifying:
 - Funnel leakage across key commerce events
 - Differences between product discovery, checkout, and conversion behavior
 - The quality of traffic sources beyond raw session volume
@@ -61,7 +61,7 @@ Python is responsible for all downstream transformations and analysis:
 - Product-level view-to-cart gap analysis
 - Time-based trend and consistency analysis
 
-
+[(Back to top)](#table-of-contents)
 ## 🧱Data
 - **Source:** `bigquery-public-data.ga4_obfuscated_sample_ecommerce`
 - **Grain:**
@@ -89,7 +89,9 @@ Python is responsible for all downstream transformations and analysis:
 - `view_item_list`
 - `view_search_results`
 
-These events are used to model **intent progression**, not just conversion.
+These events are used to model **intent progression**.
+
+[(Back to top)](#table-of-contents)
 
 ---
 ## 🔑Key Insights
@@ -111,6 +113,9 @@ These events are used to model **intent progression**, not just conversion.
 
 User drop-off is **not mainly a checkout problem**. The biggest loss happens **before users ever commit to purchase intent**, at the product decision stage. While checkout optimization remains important, especially around payment, the data suggests that improving **product discovery, relevance, and decision clarity** would yield the largest impact on overall conversion.
 
+
+[(Back to Questions)](#business-questions-answered)
+
 ## 2. Are users failing more at product decision or during checkout?
 
 ![decision_vs_checkout](images/decision_vs_checkout.png)
@@ -126,6 +131,8 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
 - The dominant conversion bottleneck occurs **before checkout begins**. This suggests that optimization efforts focused solely on checkout experience would address only a secondary issue. The larger opportunity lies in improving **product discovery, clarity, and decision confidence**—ensuring that users who reach product pages are more likely to perceive sufficient value to proceed.
 
 - It reinforces the earlier funnel analysis: **conversion challenges are driven more by product-level decision friction than by checkout mechanics**.
+
+[(Back to Questions)](#business-questions-answered)
 
 ## 3️⃣How many users actually show purchase intent vs just browsing?
 
@@ -147,6 +154,8 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
   - Evaluating **traffic quality**, not just quantity  
   - Identifying which segments (channels, products, audiences, geographies) disproportionately contribute to the high-intent and converted users.  
 
+[(Back to Questions)](#business-questions-answered)
+
 ##  4️⃣Which traffic sources bring high-intent users, not just volume?
 ![addtocart_rate_by_marketing_channel](images/addtocart_rate_by_marketing_channel.png)
 
@@ -162,6 +171,8 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
 ### Interpretation:
 
 - Traffic sources differ substantially in **intent quality**, not just scale. Channels that appear less significant by volume may deliver users who are more likely to make a purchase.
+
+[(Back to Questions)](#business-questions-answered)
 
 ## 5️⃣Which traffic sources drive consistent conversions over time?
 ![conversion_over_time](images/conversion_over_time.png)
@@ -203,6 +214,7 @@ To evaluate conversion volume and also the **conversion reliability**, daily pur
 
 - Channels differ not only in how much they convert, but in **how consistently they convert**. The most reliable drivers of sustained performance are **Direct and Organic traffic**, followed by Referral. In contrast, Paid traffic demonstrates unstable, low-volume conversion patterns, making it less suitable as a primary growth engine.
 
+[(Back to Questions)](#business-questions-answered)
 
 ## 6️⃣How does engagement relate to conversion?
 ![session_engagement_distribution](images/session_engagement_distribution.png)
@@ -228,6 +240,8 @@ Engagement time is measured in seconds and visualized on a **log scale** to acco
 
 - Engagement time shows a clear and meaningful relationship with conversion: **users who convert spend substantially more time interacting with the site**. However, engagement should be treated as a **directional indicator rather than a causal driver**. High engagement increases the probability of purchase, but conversion ultimately depends on factors such as product relevance, pricing, trust, and checkout experience.
 
+[(Back to Questions)](#business-questions-answered)
+
 ## 7️⃣Which Product Types Convert Views into Cart Adds?
 ![product_type_addtocart](images/product_type_addtocart.png)
 
@@ -251,6 +265,8 @@ This highlights a strategic distinction between:
 - **Traffic drivers** (high-view categories) and  
 - **Intent drivers** (high conversion-efficiency categories)
 
+[(Back to Questions)](#business-questions-answered)
+
 ## 8️⃣Brand X Audience → which converts better?
 ![brand_x_audience](images/brand_x_audience.png)
 
@@ -267,6 +283,8 @@ While brand-level differences are modest, audience segmentation reveals clearer 
 
 - **Who a product is for matters more than which brand it carries**, and  
 - Conversion performance can be improved by sharper audience positioning rather than brand expansion alone.
+
+[(Back to Questions)](#business-questions-answered)
 
 ## 9️⃣Distribution of countries showing strong product interest (Add-to-Cart) but weak conversion to purchase?
 
@@ -317,6 +335,8 @@ Incorporate revenue metrics (AOV, revenue per session) and, where available, cos
 
 - **Impact:** Shifts analysis from “what converts” to “what drives profitable growth”.
 
+[(Back to top)](#table-of-contents)
+
 ---
 
 ## ⚠️ Limitations
@@ -335,3 +355,11 @@ These constraints are acknowledged and do not affect the core behavioral insight
 - `seaborn`
 - `numpy`
 - `matplotlib`
+
+[(Back to top)](#table-of-contents)
+
+## Check out some of my other works: 
+- 🧠 **[HR Attrition Analytics with Dataflow Gen2](https://github.com/GH-AkshyM/Hr-Attrition-Analytics-Dashboard)** – A Clean Minimalistic look into Attrition Analytics with Insights Hard-coded.  
+- 📈 **[Sentiment Analysis Using BERT](https://github.com/GH-AkshyM/Sentiment-Analysis-using-BERT)** – Using SQL and Python pre-trained models for analysing customer reviews.
+- 🔄 **[E-commerce Cohort Analytics Dashboard with Lakehouse on MS Fabric](https://github.com/GH-AkshyM/Cohort-Analytics-Dashboard-with-Lakehouse-on-MS-Fabric/tree/main)** – Cohort-based retention and revenue analytics using DirectQuery.  
+- 📦 **[Revenue Health Dashboard](https://github.com/GH-AkshyM/Revenue-Health-Dashboard/tree/main)** – Executive Revenue Dashboard for Higher-Ups, Simplyfy monthly reports.
