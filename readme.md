@@ -87,7 +87,7 @@ These events are used to model **intent progression**, not just conversion.
 
 ## 1. Where do users drop off the most in the purchase funnel?
 
-![funnel_insights](images\funnel_drop_off_insights.png)
+![funnel_insights](images/funnel_drop_off_insights.png)
 
 - **The largest drop occurs at the product decision stage.**  
   - Nearly **80% of users who view a product do not add it to cart**, making the transition from `view_item` to `add_to_cart` the dominant point of funnel leakage. This indicates that most friction occurs **before checkout begins**, likely driven by factors such as product relevance, pricing, presentation, or perceived value.
@@ -104,7 +104,7 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
 
 ## 2. Are users failing more at product decision or during checkout?
 
-![decision_vs_checkout](images\decision_vs_checkout.png)
+![decision_vs_checkout](images/decision_vs_checkout.png)
 
 - **Users fail significantly more at the product decision stage.**  
   - Nearly **80% of users who view a product do not add it to cart**, indicating that most users disengage before showing strong purchase intent. This points to friction in areas such as product relevance, pricing, perceived value, or presentation.
@@ -120,7 +120,7 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
 
 ## 3️⃣How many users actually show purchase intent vs just browsing?
 
-![purchase_intent_vs_browsing](images\purchase_intent_vs_browsing.png)
+![purchase_intent_vs_browsing](images/purchase_intent_vs_browsing.png)
 
 - **The majority of users exhibit browsing-only behavior.**  
   - Nearly **73% of users** interact with products without progressing beyond viewing. This confirms that most traffic represents **low commercial intent**.
@@ -139,7 +139,7 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
   - Identifying which segments (channels, products, audiences, geographies) disproportionately contribute to the high-intent and converted users.  
 
 ##  4️⃣Which traffic sources bring high-intent users, not just volume?
-![addtocart_rate_by_marketing_channel](images\addtocart_rate_by_marketing_channel.png)
+![addtocart_rate_by_marketing_channel](images/addtocart_rate_by_marketing_channel.png)
 
 - **1. High-intent traffic does not align with traffic volume.**  
   - Organic and Direct channels drive the largest number of product views, yet their intent rates remain below 21%. In contrast, the **Unknown/Privacy segment shows the highest intent rate (27.4%)** despite lower overall volume.
@@ -155,7 +155,7 @@ User drop-off is **not mainly a checkout problem**. The biggest loss happens **b
 - Traffic sources differ substantially in **intent quality**, not just scale. Channels that appear less significant by volume may deliver users who are more likely to make a purchase.
 
 ## 5️⃣Which traffic sources drive consistent conversions over time?
-![conversion_over_time](images\conversion_over_time.png)
+![conversion_over_time](images/conversion_over_time.png)
 To evaluate conversion volume and also the **conversion reliability**, daily purchases were analyzed by marketing channel using:
 
 - A **7-day rolling average** of daily conversions (trend behavior)
@@ -196,7 +196,7 @@ To evaluate conversion volume and also the **conversion reliability**, daily pur
 
 
 ## 6️⃣How does engagement relate to conversion?
-![session_engagement_distribution](images\session_engagement_distribution.png)
+![session_engagement_distribution](images/session_engagement_distribution.png)
 
 To examine the relationship between user engagement and conversion, session-level **engagement time** was compared between:
 
@@ -220,7 +220,7 @@ Engagement time is measured in seconds and visualized on a **log scale** to acco
 - Engagement time shows a clear and meaningful relationship with conversion: **users who convert spend substantially more time interacting with the site**. However, engagement should be treated as a **directional indicator rather than a causal driver**. High engagement increases the probability of purchase, but conversion ultimately depends on factors such as product relevance, pricing, trust, and checkout experience.
 
 ## 7️⃣Which Product Types Convert Views into Cart Adds?
-![product_type_addtocart](images\product_type_addtocart.png)
+![product_type_addtocart](images/product_type_addtocart.png)
 
 - **Lightweight, low-commitment products convert interest most effectively.**  
   - Gift cards, headwear, stickers, drinkware, and sweatshirts all show add-to-cart rates above 25%, indicating that users are more willing to commit to items that are either lower cost, lower risk, or highly utilitarian.
@@ -243,7 +243,7 @@ This highlights a strategic distinction between:
 - **Intent drivers** (high conversion-efficiency categories)
 
 ## 8️⃣Brand X Audience → which converts better?
-![brand_x_audience](images\brand_x_audience.png)
+![brand_x_audience](images/brand_x_audience.png)
 
 - **Social Impact / Pride** products show the strongest intent, indicating that cause-driven or identity-aligned merchandise resonates more strongly at the decision stage.  
 - **Gender-targeted segments (Men, Women)** perform slightly better than Unisex, suggesting clearer audience positioning improves conversion efficiency.  
@@ -261,7 +261,7 @@ While brand-level differences are modest, audience segmentation reveals clearer 
 
 ## 9️⃣Distribution of countries showing strong product interest (Add-to-Cart) but weak conversion to purchase?
 
-![distribution_by_countries](images\distribution_by_countries.png)
+![distribution_by_countries](images/distribution_by_countries.png)
 
 - **Several countries exhibit strong intent but weak purchase completion.**  
   - A visible cluster of countries falls into the **High Interest, Low Conversion** quadrant, indicating that users in these regions frequently express purchase intent (via add-to-cart) but disproportionately fail to convert.
