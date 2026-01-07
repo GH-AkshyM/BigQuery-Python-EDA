@@ -13,21 +13,30 @@ The goal is not to replicate standard dashboard metrics, but to understand **how
 - Product and brand performance at each stage of intent
 - Geographic patterns where interest is high but conversion is weak
 ---
+## 📚Table of Contents:
+|**No.**  |**Section**|
+|:-: | :------------ | 
+|1.   |  [Business Questions Answered](#business-questions-answered)                              |
+|2.   |  [Approach](#approach)                              |
+|3.   |  [Data Architecture](#data)                              |
+|4.   |  [Key Insights](#key-insights)                              |
+|5.   |  [Future Scope](#future-scope-and-improvements)                              |
 
-## 📊 Business Questions Answered
+---
+## 📊Business Questions Answered
 
-1. Where do users drop off the most in the purchase funnel?
-2. Are users failing more at product decision or during checkout?
-3. How many users show genuine purchase intent versus casual browsing?
-4. Which traffic sources bring high-intent users, not just volume?
-5. Which traffic sources drive consistent conversions over time?
-6. How does engagement relate to conversion?
-7. Which product types convert views into cart adds most effectively?
-8. How do brand and audience segments differ in conversion performance?
-9. Which countries show strong product interest (add-to-cart) but weak conversion to purchase?
+1. [Where do users drop off the most in the purchase funnel?](#1-where-do-users-drop-off-the-most-in-the-purchase-funnel)
+2. [Are users failing more at product decision or during checkout?](#2-are-users-failing-more-at-product-decision-or-during-checkout)
+3. [How many users show genuine purchase intent versus casual browsing?](#3️⃣how-many-users-actually-show-purchase-intent-vs-just-browsing)
+4. [Which traffic sources bring high-intent users, not just volume?](#4️⃣which-traffic-sources-bring-high-intent-users-not-just-volume)
+5. [Which traffic sources drive consistent conversions over time?](#5️⃣which-traffic-sources-drive-consistent-conversions-over-time)
+6. [How does engagement relate to conversion?](#6️⃣how-does-engagement-relate-to-conversion)
+7. [Which product types convert views into cart adds most effectively?](#7️⃣which-product-types-convert-views-into-cart-adds)
+8. [How do brand and audience segments differ in conversion performance?](#8️⃣brand-x-audience--which-converts-better)
+9. [Which countries show strong product interest (add-to-cart) but weak conversion to purchase?](#9️⃣distribution-of-countries-showing-strong-product-interest-add-to-cart-but-weak-conversion-to-purchase)
 ---
 
-## 🧠 Approach
+## 🧠Approach
 
 ### BigQuery — Data Extraction
 
@@ -53,7 +62,7 @@ Python is responsible for all downstream transformations and analysis:
 - Time-based trend and consistency analysis
 
 
-## 🧱 Data
+## 🧱Data
 - **Source:** `bigquery-public-data.ga4_obfuscated_sample_ecommerce`
 - **Grain:**
   - Event-level data (user, session, traffic, engagement context)
@@ -67,7 +76,7 @@ Python is responsible for all downstream transformations and analysis:
 
 ---
 
-## 🔍 Funnel & Behavioral Scope
+## 🔍Funnel & Behavioral Scope
 
 ### Funnel Events Used
 - `view_item`
@@ -83,7 +92,7 @@ Python is responsible for all downstream transformations and analysis:
 These events are used to model **intent progression**, not just conversion.
 
 ---
-## 🔑 Key Insights
+## 🔑Key Insights
 
 ## 1. Where do users drop off the most in the purchase funnel?
 
@@ -286,7 +295,7 @@ While brand-level differences are modest, audience segmentation reveals clearer 
   - Addressing region-specific friction can unlock conversion gains without changing product mix or traffic strategy.
 
 ---
-## 🚀 Future Scope & Improvements
+## 🚀Future Scope and Improvements
 
 ### 1️⃣ Checkout Friction Diagnostics
 Current analysis identifies where users drop off but not **why**.
